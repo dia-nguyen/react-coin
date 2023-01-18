@@ -2,10 +2,8 @@
  * @returns true for heads, false for tails
  */
 function getRandomCoin() {
-  const coins = ["head", "tails"];
-  const result = coins[Math.round(Math.random())];
-  if (result === "heads") return true;
-  return false;
+  const result = Math.round(Math.random()); // 0 or 1
+  return result ? true : false;
 }
 
 export { getRandomCoin };
